@@ -199,26 +199,62 @@ section {
   background: var(--black);
   overflow: hidden;
 }
+
+/* VÍDEO DE FUNDO */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  animation: hero-video-fadein 1.8s ease 0.5s forwards;
+}
+@keyframes hero-video-fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg,
+      rgba(11,11,11,0.55) 0%,
+      rgba(11,11,11,0.30) 40%,
+      rgba(11,11,11,0.65) 80%,
+      rgba(11,11,11,0.92) 100%
+    ),
+    radial-gradient(ellipse 90% 70% at 50% 50%, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 100%);
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(246,178,35,0.10) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(246,178,35,0.05) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(246,178,35,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(246,178,35,0.04) 0%, transparent 60%);
+  pointer-events: none;
 }
 .hero-grid {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  pointer-events: none;
 }
 .hero-particles {
   position: absolute;
   inset: 0;
+  z-index: 2;
   overflow: hidden;
+  pointer-events: none;
 }
 .particle {
   position: absolute;
@@ -234,7 +270,7 @@ section {
   90%  { opacity: 0.4; }
   100% { opacity: 0; transform: translateY(-100vh) scale(0.3); }
 }
-.hero-content { position: relative; z-index: 2; }
+.hero-content { position: relative; z-index: 3; }
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -344,6 +380,7 @@ section {
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
