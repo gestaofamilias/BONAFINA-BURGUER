@@ -721,6 +721,91 @@ section {
 .app-feat-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
 .app-feat-card p { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6; }
 
+/* ---- APP VIDEO SECTION ---- */
+.app-video-section {
+  text-align: center;
+}
+.app-video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.app-video-phone {
+  position: relative;
+  width: 320px;
+}
+.app-video-phone-outer {
+  position: relative;
+  background: #111;
+  border-radius: 48px;
+  padding: 14px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.07),
+    0 50px 130px rgba(0,0,0,0.7),
+    0 0 80px rgba(246,178,35,0.12);
+  animation: app-video-float 5s ease-in-out infinite;
+}
+@keyframes app-video-float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+.app-video-notch {
+  position: absolute;
+  top: 14px; left: 50%;
+  transform: translateX(-50%);
+  width: 110px; height: 28px;
+  background: #111;
+  border-radius: 0 0 18px 18px;
+  z-index: 3;
+}
+.app-video-phone-inner {
+  border-radius: 36px;
+  overflow: hidden;
+  aspect-ratio: 9/19.5;
+  background: #000;
+  position: relative;
+}
+.app-video-phone-inner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 36px;
+}
+.app-video-play-btn {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: rgba(246,178,35,0.92);
+  border: none;
+  color: #0B0B0B;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  box-shadow: 0 8px 30px rgba(246,178,35,0.5);
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.app-video-phone-outer:hover .app-video-play-btn {
+  opacity: 1;
+}
+.app-video-play-btn:hover {
+  transform: translateX(-50%) scale(1.12);
+  box-shadow: 0 12px 40px rgba(246,178,35,0.7);
+}
+.app-video-phone-glow {
+  position: absolute;
+  inset: -50px;
+  background: radial-gradient(ellipse at center, rgba(246,178,35,0.18) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* ==== SECTION 6 — JORNADA ==== */
 #jornada {
   padding: 8rem 0;

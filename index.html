@@ -405,6 +405,37 @@
         <p>Programa de pontos integrado. Quanto mais pede, mais ganha.</p>
       </div>
     </div>
+
+    <!-- VÍDEO DO APP EM DESTAQUE -->
+    <div class="app-video-section reveal" style="margin-top:6rem;">
+      <p style="text-align:center;font-size:0.72rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Veja o App em Ação</p>
+      <h3 style="text-align:center;font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;margin-bottom:3.5rem;letter-spacing:-0.02em;">Experiência <em style="font-style:normal;color:var(--gold);">real</em>, do início ao fim.</h3>
+
+      <div class="app-video-wrapper reveal-scale reveal-delay-1">
+        <!-- moldura do celular gigante -->
+        <div class="app-video-phone">
+          <div class="app-video-phone-outer">
+            <div class="app-video-notch"></div>
+            <div class="app-video-phone-inner">
+              <video
+                id="videoApp"
+                src="VIDEO DO APP.mp4"
+                muted
+                loop
+                playsinline
+                preload="auto"
+              ></video>
+            </div>
+            <!-- botão play/pause sobre o celular -->
+            <button class="app-video-play-btn" id="appVideoBtn" aria-label="Play/Pause">
+              <span id="appVideoIcon">▶</span>
+            </button>
+          </div>
+          <div class="app-video-phone-glow"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 

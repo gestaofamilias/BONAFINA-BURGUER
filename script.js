@@ -429,3 +429,38 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     bar.style.width = pct + '%';
   }, { passive: true });
 })();
+
+/* ---- VIDEO DO APP — autoplay na viewport + play/pause ---- */
+(function initAppVideo() {
+  const video = document.getElementById('videoApp');
+  const btn   = document.getElementById('appVideoBtn');
+  const icon  = document.getElementById('appVideoIcon');
+  if (!video) return;
+
+  /* Autoplay ao entrar na viewport */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+        if (icon) icon.textContent = '⏸';
+      } else {
+        video.pause();
+        if (icon) icon.textContent = '▶';
+      }
+    });
+  }, { threshold: 0.4 });
+  io.observe(video);
+
+  /* Botão play/pause */
+  if (btn) {
+    btn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        icon.textContent = '⏸';
+      } else {
+        video.pause();
+        icon.textContent = '▶';
+      }
+    });
+  }
+})();
