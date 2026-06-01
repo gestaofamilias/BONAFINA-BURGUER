@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bonafina Burguer — Apresentação Institucional Premium. Nova identidade, aplicativo, sistema de gestão e dashboard." />
+  <title>Bonafina Burguer — Apresentação Premium</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading">
+  <img src="LOGO.png" alt="Bonafina Burguer" class="loading-logo" />
+  <div class="loading-bar-wrap">
+    <div class="loading-bar-fill"></div>
+  </div>
+  <p class="loading-text">Carregando experiência</p>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress" style="position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#F6B223,#FFCC00);z-index:2000;width:0;transition:width 0.1s;pointer-events:none;"></div>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span>BONAFINA</span> BURGUER
+  </div>
+  <ul class="nav-links">
+    <li><a href="#identidade">Identidade</a></li>
+    <li><a href="#trailer">Trailer</a></li>
+    <li><a href="#cardapio">Cardápio</a></li>
+    <li><a href="#app">App</a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#futuro">Futuro</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('cta-final').scrollIntoView({behavior:'smooth'})">Solicitar Demo</button>
+  <div class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ============================================================
+     SEÇÃO 1 — HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-particles"></div>
+
+  <div class="hero-content container">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Nova era da Bonafina Burguer
+    </div>
+
+    <img src="LOGO.png" alt="Bonafina Burguer" class="hero-logo-img" />
+
+    <h1 class="hero-title">
+      O verdadeiro sabor<br />do <em>burger artesanal.</em>
+    </h1>
+    <p class="hero-sub">
+      Uma nova experiência gastronômica impulsionada por tecnologia. Identidade visual, aplicativo mobile, sistema de gestão e muito mais.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('identidade').scrollIntoView({behavior:'smooth'})">
+        Conheça o Projeto
+      </button>
+      <button class="btn-outline" onclick="document.getElementById('dashboard').scrollIntoView({behavior:'smooth'})">
+        Ver o Sistema
+      </button>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num" data-counter data-to="12" data-suffix="+">0+</div>
+        <div class="hero-stat-label">Módulos do Sistema</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-counter data-to="100" data-suffix="%">0%</div>
+        <div class="hero-stat-label">Digital & Integrado</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-counter data-to="3" data-suffix="x">0x</div>
+        <div class="hero-stat-label">Crescimento Projetado</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    SCROLL
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 2 — IDENTIDADE VISUAL
+     ============================================================ -->
+<section id="identidade">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">02 — Identidade Visual</span>
+    <h2 class="section-title reveal reveal-delay-1">Uma marca que <em>comunica</em><br />antes de servir.</h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      Design construído para gerar desejo, confiança e reconhecimento imediato — do trailer ao app, tudo fala a mesma língua.
+    </p>
+
+    <div class="identity-grid">
+      <!-- Logo principal -->
+      <div class="reveal-left">
+        <div class="identity-image-block">
+          <img src="IDENTIDADE VISUAL.png" alt="Identidade Visual Bonafina Burguer" />
+          <div style="margin-top:1.5rem;">
+            <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:0.8rem;">Paleta de Cores Oficial</p>
+            <div class="colors-grid">
+              <div class="color-chip" style="background:#0B0B0B;border:1px solid rgba(255,255,255,0.1);">
+                <span class="color-chip-name" style="color:#fff;">Preto Profundo</span>
+                <span class="color-chip-hex" style="color:rgba(255,255,255,0.4);">#0B0B0B</span>
+              </div>
+              <div class="color-chip" style="background:#1A1A1A;border:1px solid rgba(255,255,255,0.08);">
+                <span class="color-chip-name" style="color:#fff;">Preto Sec.</span>
+                <span class="color-chip-hex" style="color:rgba(255,255,255,0.4);">#1A1A1A</span>
+              </div>
+              <div class="color-chip" style="background:#F6B223;">
+                <span class="color-chip-name" style="color:#0B0B0B;">Dourado</span>
+                <span class="color-chip-hex" style="color:rgba(0,0,0,0.5);">#F6B223</span>
+              </div>
+              <div class="color-chip" style="background:#FFCC00;">
+                <span class="color-chip-name" style="color:#0B0B0B;">Amarelo</span>
+                <span class="color-chip-hex" style="color:rgba(0,0,0,0.5);">#FFCC00</span>
+              </div>
+              <div class="color-chip" style="background:#FFFFFF;">
+                <span class="color-chip-name" style="color:#0B0B0B;">Branco</span>
+                <span class="color-chip-hex" style="color:rgba(0,0,0,0.4);">#FFFFFF</span>
+              </div>
+              <div class="color-chip" style="background:#F5F5F5;">
+                <span class="color-chip-name" style="color:#0B0B0B;">Cinza Claro</span>
+                <span class="color-chip-hex" style="color:rgba(0,0,0,0.4);">#F5F5F5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="reveal-right" style="display:flex;flex-direction:column;gap:2rem;">
+        <div>
+          <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;color:#F6B223;text-transform:uppercase;margin-bottom:1.2rem;">Tipografia</p>
+          <div style="background:#1A1A1A;border-radius:16px;padding:2rem;border:1px solid rgba(255,255,255,0.06);">
+            <p style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1.1;color:#fff;margin-bottom:0.3rem;">Bonafina</p>
+            <p style="font-size:0.95rem;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:0.2em;text-transform:uppercase;">Playfair Display — Títulos</p>
+            <div style="height:1px;background:rgba(255,255,255,0.06);margin:1.2rem 0;"></div>
+            <p style="font-family:'Inter',sans-serif;font-size:1rem;color:rgba(255,255,255,0.75);">A B C D E F G H I J K L M N</p>
+            <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);margin-top:0.3rem;letter-spacing:0.1em;">INTER — CORPO E INTERFACE</p>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;color:#F6B223;text-transform:uppercase;margin-bottom:1.2rem;">Elementos da Marca</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="background:#1A1A1A;border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06);text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🍔</div>
+              <p style="font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.7);">Ícone Principal</p>
+            </div>
+            <div style="background:#1A1A1A;border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06);text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">⭐</div>
+              <p style="font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.7);">Qualidade Premium</p>
+            </div>
+            <div style="background:#1A1A1A;border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06);text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🔥</div>
+              <p style="font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.7);">Artesanal</p>
+            </div>
+            <div style="background:#1A1A1A;border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06);text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">📱</div>
+              <p style="font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.7);">Digital First</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,rgba(246,178,35,0.08),rgba(246,178,35,0.02));border:1px solid rgba(246,178,35,0.2);border-radius:16px;padding:1.8rem;">
+          <p style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:#fff;margin-bottom:0.5rem;">"Sabor que fica na memória."</p>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.4);">Slogan oficial da marca — simples, poderoso, inesquecível.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 3 — TRAILER
+     ============================================================ -->
+<section id="trailer">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">03 — Novo Trailer</span>
+    <h2 class="section-title reveal reveal-delay-1">O ponto de venda<br />que <em>impressiona.</em></h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      Identidade visual aplicada em cada detalhe — do painel luminoso ao atendimento. Uma vitrine ambulante da marca.
+    </p>
+
+    <div class="trailer-showcase reveal-scale reveal-delay-2">
+      <img src="TRAILER.png" alt="Novo Trailer Bonafina Burguer" />
+      <div class="trailer-overlay">
+        <div class="trailer-info">
+          <h3>Trailer Bonafina Burguer</h3>
+          <p>Nova identidade visual, iluminação premium e atendimento de excelência.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trailer-features">
+      <div class="trailer-feat reveal reveal-delay-1">
+        <span class="trailer-feat-icon">🎨</span>
+        <h4>Nova Identidade</h4>
+        <p>Visual alinhado à marca, cores dourado e preto com impacto imediato.</p>
+      </div>
+      <div class="trailer-feat reveal reveal-delay-2">
+        <span class="trailer-feat-icon">💡</span>
+        <h4>Iluminação LED</h4>
+        <p>Destaque noturno com LEDs dourados que atraem de longe.</p>
+      </div>
+      <div class="trailer-feat reveal reveal-delay-3">
+        <span class="trailer-feat-icon">📋</span>
+        <h4>Cardápio Visual</h4>
+        <p>Menu impresso e digital integrado com o sistema de pedidos.</p>
+      </div>
+      <div class="trailer-feat reveal reveal-delay-4">
+        <span class="trailer-feat-icon">🏆</span>
+        <h4>Experiência Premium</h4>
+        <p>Atendimento treinado e empacotamento personalizado da marca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 4 — CARDÁPIO DIGITAL
+     ============================================================ -->
+<section id="cardapio" style="background:var(--black2);">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">04 — Cardápio Digital</span>
+    <h2 class="section-title reveal reveal-delay-1">Seu cardápio,<br /><em>sempre na mão.</em></h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      Interface pensada para converter. Navegação fluida, fotos que dão água na boca e checkout em poucos cliques.
+    </p>
+
+    <div class="menu-layout" style="margin-top:5rem;">
+      <div class="reveal-left" style="display:flex;justify-content:center;">
+        <div class="phone-frame">
+          <div class="phone-glow"></div>
+          <div class="phone-outer">
+            <div class="phone-inner">
+              <div class="phone-notch"></div>
+              <img src="APP E SISTEMA DE GESTÃO.png" alt="Cardápio Digital Bonafina" />
+            </div>
+          </div>
+          <p class="phone-screen-label" style="text-align:center;margin-top:1rem;font-size:0.72rem;color:rgba(255,255,255,0.3);letter-spacing:0.1em;text-transform:uppercase;transition:opacity 0.3s;">Cardápio</p>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <ul class="menu-features">
+          <li class="menu-feature-item">
+            <div class="menu-feature-icon">🍔</div>
+            <div class="menu-feature-text">
+              <h4>Burgers Artesanais</h4>
+              <p>Fotos profissionais, descrição detalhada e personalizações disponíveis em tempo real.</p>
+            </div>
+          </li>
+          <li class="menu-feature-item">
+            <div class="menu-feature-icon">🎯</div>
+            <div class="menu-feature-text">
+              <h4>Combos e Promoções</h4>
+              <p>Ofertas automáticas integradas com estoque — sem promoção de produto esgotado.</p>
+            </div>
+          </li>
+          <li class="menu-feature-item">
+            <div class="menu-feature-icon">🛒</div>
+            <div class="menu-feature-text">
+              <h4>Carrinho Inteligente</h4>
+              <p>Sugestões personalizadas, upsell automático e checkout em 3 toques.</p>
+            </div>
+          </li>
+          <li class="menu-feature-item">
+            <div class="menu-feature-icon">⚡</div>
+            <div class="menu-feature-text">
+              <h4>Atualização Instantânea</h4>
+              <p>Altere preços, adicione ou remova itens do cardápio em segundos pelo painel admin.</p>
+            </div>
+          </li>
+          <li class="menu-feature-item">
+            <div class="menu-feature-icon">📊</div>
+            <div class="menu-feature-text">
+              <h4>Analytics de Produto</h4>
+              <p>Veja quais itens mais vendem, horários de pico e produtos com maior margem.</p>
+            </div>
+          </li>
+          <li class="menu-feature-item">
+            <div class="menu-feature-icon">🔗</div>
+            <div class="menu-feature-text">
+              <h4>Link Compartilhável</h4>
+              <p>Cardápio com link direto para WhatsApp, Instagram e redes sociais.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 5 — APP DO CLIENTE
+     ============================================================ -->
+<section id="app">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <div style="text-align:center;max-width:700px;margin:0 auto;">
+      <span class="section-label reveal">05 — Aplicativo Mobile</span>
+      <h2 class="section-title reveal reveal-delay-1">Do pedido à entrega,<br /><em>tudo no app.</em></h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;max-width:none;">
+        Experiência de compra premium na palma da mão. Seu cliente faz o pedido, acompanha em tempo real e paga com PIX.
+      </p>
+    </div>
+
+    <div class="app-screens reveal-scale reveal-delay-1" style="margin-top:4rem;">
+      <div class="app-screen">
+        <div class="app-phone">
+          <div class="app-phone-inner">
+            <img src="APP E SISTEMA DE GESTÃO.png" alt="App Tela 1" />
+          </div>
+        </div>
+        <p class="app-screen-label">Início</p>
+      </div>
+      <div class="app-screen">
+        <div class="app-phone">
+          <div class="app-phone-inner">
+            <img src="IDENTIDADE VISUAL.png" alt="App Tela 2" style="object-position:top;" />
+          </div>
+        </div>
+        <p class="app-screen-label">Cardápio</p>
+      </div>
+      <div class="app-screen">
+        <div class="app-phone">
+          <div class="app-phone-inner">
+            <img src="APP E SISTEMA DE GESTÃO.png" alt="App Tela 3" style="object-position:center;" />
+          </div>
+        </div>
+        <p class="app-screen-label">Pedido</p>
+      </div>
+      <div class="app-screen">
+        <div class="app-phone">
+          <div class="app-phone-inner">
+            <img src="SISTEMA DE GESTAO.png" alt="App Tela 4" />
+          </div>
+        </div>
+        <p class="app-screen-label">PIX</p>
+      </div>
+      <div class="app-screen">
+        <div class="app-phone">
+          <div class="app-phone-inner">
+            <img src="APP E SISTEMA DE GESTÃO.png" alt="App Tela 5" style="object-position:bottom;" />
+          </div>
+        </div>
+        <p class="app-screen-label">Rastreio</p>
+      </div>
+    </div>
+
+    <div class="app-features-grid" style="margin-top:5rem;">
+      <div class="app-feat-card reveal reveal-delay-1">
+        <span class="app-feat-icon">🔐</span>
+        <h4>Cadastro & Login</h4>
+        <p>Onboarding rápido com validação segura e perfil completo do cliente.</p>
+      </div>
+      <div class="app-feat-card reveal reveal-delay-2">
+        <span class="app-feat-icon">📱</span>
+        <h4>Pedido Fácil</h4>
+        <p>Seleção de itens, personalização e resumo claro antes de confirmar.</p>
+      </div>
+      <div class="app-feat-card reveal reveal-delay-3">
+        <span class="app-feat-icon">📍</span>
+        <h4>Rastreamento Live</h4>
+        <p>Status em tempo real: recebido → preparando → pronto → entregue.</p>
+      </div>
+      <div class="app-feat-card reveal reveal-delay-1">
+        <span class="app-feat-icon">💸</span>
+        <h4>Pagamento PIX</h4>
+        <p>QR Code gerado automaticamente. Confirmação instantânea no sistema.</p>
+      </div>
+      <div class="app-feat-card reveal reveal-delay-2">
+        <span class="app-feat-icon">📋</span>
+        <h4>Histórico</h4>
+        <p>Últimos pedidos, favoritos e opção de repetir com um toque.</p>
+      </div>
+      <div class="app-feat-card reveal reveal-delay-3">
+        <span class="app-feat-icon">🎁</span>
+        <h4>Fidelidade</h4>
+        <p>Programa de pontos integrado. Quanto mais pede, mais ganha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 6 — JORNADA DE COMPRA
+     ============================================================ -->
+<section id="jornada" style="background:var(--black2);">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <div style="text-align:center;max-width:700px;margin:0 auto;">
+      <span class="section-label reveal">06 — Jornada do Cliente</span>
+      <h2 class="section-title reveal reveal-delay-1">Da escolha<br />à <em>entrega perfeita.</em></h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;max-width:none;">
+        Cada etapa pensada para ser fluida, rápida e satisfatória. O cliente sente o cuidado em cada interação.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-content">
+          <div class="timeline-step-num">01</div>
+          <h4>Escolhe o Produto</h4>
+          <p>Navega pelo cardápio visual, vê as fotos e personaliza seu burger.</p>
+        </div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">🍔</div>
+        </div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">🛒</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-step-num">02</div>
+          <h4>Adiciona ao Carrinho</h4>
+          <p>Combos, extras e bebidas adicionados com facilidade. Resumo claro.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-content">
+          <div class="timeline-step-num">03</div>
+          <h4>Finaliza o Pedido</h4>
+          <p>Revisa os itens, confirma endereço ou escolhe retirada no local.</p>
+        </div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">✅</div>
+        </div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">💸</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-step-num">04</div>
+          <h4>Pagamento via PIX</h4>
+          <p>QR Code gerado na hora. Confirmação automática em segundos.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-content">
+          <div class="timeline-step-num">05</div>
+          <h4>Pedido Recebido</h4>
+          <p>Notificação push enviada. Sistema emite comanda automaticamente.</p>
+        </div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">🔔</div>
+        </div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">👨‍🍳</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-step-num">06</div>
+          <h4>Preparação</h4>
+          <p>Cozinha recebe o pedido no painel. Cliente acompanha o status em tempo real.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-content">
+          <div class="timeline-step-num">07</div>
+          <h4>Entregue com Excelência</h4>
+          <p>Embalagem personalizada. Cliente avalia e entra no programa de fidelidade.</p>
+        </div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner">🚀</div>
+        </div>
+        <div class="timeline-empty"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 7 — DASHBOARD
+     ============================================================ -->
+<section id="dashboard">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">07 — Dashboard Administrativo</span>
+    <h2 class="section-title reveal reveal-delay-1">Seu negócio inteiro<br />em <em>uma tela.</em></h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      Dados em tempo real, relatórios inteligentes e controle total da operação — de qualquer dispositivo, em qualquer lugar.
+    </p>
+
+    <div class="dashboard-frame reveal-scale reveal-delay-2">
+      <div class="dash-topbar">
+        <div class="dash-dot dash-dot-r"></div>
+        <div class="dash-dot dash-dot-y"></div>
+        <div class="dash-dot dash-dot-g"></div>
+        <div class="dash-title-bar">Bonafina Burguer — Painel Administrativo</div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-kpi-row">
+          <div class="kpi-card">
+            <div class="kpi-label">Vendas Hoje</div>
+            <div class="kpi-value" data-live data-base="2847" data-format="currency">R$2.847</div>
+            <div class="kpi-change kpi-up">↑ 18% vs ontem</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Pedidos</div>
+            <div class="kpi-value" data-live data-base="94" data-format="number">94</div>
+            <div class="kpi-change kpi-up">↑ 12 novos</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Ticket Médio</div>
+            <div class="kpi-value">R$38,50</div>
+            <div class="kpi-change kpi-up">↑ R$2,30</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Clientes Ativos</div>
+            <div class="kpi-value" data-live data-base="312" data-format="number">312</div>
+            <div class="kpi-change kpi-up">↑ 8 novos hoje</div>
+          </div>
+        </div>
+
+        <div class="dash-charts-row">
+          <div class="chart-card">
+            <div class="chart-card-title">Vendas da Semana (R$)</div>
+            <div class="chart-container" style="height:200px;">
+              <canvas id="chartVendas"></canvas>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="chart-card" style="flex:1;">
+              <div class="chart-card-title">Pedidos por Dia</div>
+              <div class="chart-container" style="height:130px;">
+                <canvas id="chartPedidos"></canvas>
+              </div>
+            </div>
+            <div class="chart-card" style="flex:1;">
+              <div class="chart-card-title">Categorias</div>
+              <div class="chart-container" style="height:130px;">
+                <canvas id="chartCategorias"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-image-block reveal-scale reveal-delay-2" style="margin-top:3rem;">
+      <img src="SISTEMA DE GESTAO.png" alt="Sistema de Gestão Bonafina Burguer" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 8 — CONTROLE DE ESTOQUE
+     ============================================================ -->
+<section id="estoque" style="background:var(--black2);">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">08 — Controle de Estoque</span>
+    <h2 class="section-title reveal reveal-delay-1">Nunca mais fique<br />sem <em>ingrediente.</em></h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      Baixa automática a cada venda. Alertas de reposição. Histórico completo de entrada e saída.
+    </p>
+
+    <div class="stock-grid">
+      <div class="reveal-left">
+        <div class="stock-panel">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
+            <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.35);">Estoque Atual</p>
+            <span style="background:rgba(52,211,153,0.1);color:#34D399;font-size:0.65rem;font-weight:700;padding:0.2rem 0.7rem;border-radius:6px;letter-spacing:0.08em;">● LIVE</span>
+          </div>
+
+          <div class="stock-item">
+            <div class="stock-icon">🍞</div>
+            <div class="stock-name"><h4>Pão Brioche</h4><p>Unidades</p></div>
+            <div class="stock-bar-wrap">
+              <div class="stock-bar-track">
+                <div class="stock-bar-fill" style="width:78%;background:linear-gradient(90deg,#34D399,#6EE7B7);"></div>
+              </div>
+            </div>
+            <span class="stock-qty">156</span>
+            <span class="stock-status status-ok">OK</span>
+          </div>
+
+          <div class="stock-item">
+            <div class="stock-icon">🥩</div>
+            <div class="stock-name"><h4>Blend de Carne</h4><p>kg</p></div>
+            <div class="stock-bar-wrap">
+              <div class="stock-bar-track">
+                <div class="stock-bar-fill" style="width:55%;background:linear-gradient(90deg,#FBB124,#F6B223);"></div>
+              </div>
+            </div>
+            <span class="stock-qty">8.2</span>
+            <span class="stock-status status-low">BAIXO</span>
+          </div>
+
+          <div class="stock-item">
+            <div class="stock-icon">🧀</div>
+            <div class="stock-name"><h4>Queijo Cheddar</h4><p>fatias</p></div>
+            <div class="stock-bar-wrap">
+              <div class="stock-bar-track">
+                <div class="stock-bar-fill" style="width:88%;background:linear-gradient(90deg,#34D399,#6EE7B7);"></div>
+              </div>
+            </div>
+            <span class="stock-qty">220</span>
+            <span class="stock-status status-ok">OK</span>
+          </div>
+
+          <div class="stock-item">
+            <div class="stock-icon">🥓</div>
+            <div class="stock-name"><h4>Bacon Artesanal</h4><p>g</p></div>
+            <div class="stock-bar-wrap">
+              <div class="stock-bar-track">
+                <div class="stock-bar-fill" style="width:25%;background:linear-gradient(90deg,#F87171,#FCA5A5);"></div>
+              </div>
+            </div>
+            <span class="stock-qty">420</span>
+            <span class="stock-status status-low">BAIXO</span>
+          </div>
+
+          <div class="stock-item">
+            <div class="stock-icon">🥤</div>
+            <div class="stock-name"><h4>Refrigerante</h4><p>latas</p></div>
+            <div class="stock-bar-wrap">
+              <div class="stock-bar-track">
+                <div class="stock-bar-fill" style="width:92%;background:linear-gradient(90deg,#34D399,#6EE7B7);"></div>
+              </div>
+            </div>
+            <span class="stock-qty">184</span>
+            <span class="stock-status status-ok">OK</span>
+          </div>
+
+          <div class="stock-item">
+            <div class="stock-icon">🥬</div>
+            <div class="stock-name"><h4>Alface Crespa</h4><p>un</p></div>
+            <div class="stock-bar-wrap">
+              <div class="stock-bar-track">
+                <div class="stock-bar-fill" style="width:8%;background:linear-gradient(90deg,#F87171,#FCA5A5);"></div>
+              </div>
+            </div>
+            <span class="stock-qty">12</span>
+            <span class="stock-status status-out">CRÍTICO</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <ul class="stock-features">
+          <li class="stock-feature">
+            <div class="stock-feature-dot"></div>
+            <div>
+              <h4>Baixa Automática</h4>
+              <p>Cada venda desconta automaticamente os ingredientes utilizados no estoque.</p>
+            </div>
+          </li>
+          <li class="stock-feature">
+            <div class="stock-feature-dot"></div>
+            <div>
+              <h4>Alertas de Reposição</h4>
+              <p>Notificação automática por WhatsApp quando o estoque atinge o nível mínimo.</p>
+            </div>
+          </li>
+          <li class="stock-feature">
+            <div class="stock-feature-dot"></div>
+            <div>
+              <h4>Histórico Completo</h4>
+              <p>Rastreie todas as entradas e saídas com data, hora e usuário responsável.</p>
+            </div>
+          </li>
+          <li class="stock-feature">
+            <div class="stock-feature-dot"></div>
+            <div>
+              <h4>Custo por Produto</h4>
+              <p>Calcule automaticamente o custo de cada hamburguer e sua margem de lucro.</p>
+            </div>
+          </li>
+          <li class="stock-feature">
+            <div class="stock-feature-dot"></div>
+            <div>
+              <h4>Relatório de Desperdício</h4>
+              <p>Identifique perdas, vencimentos e oportunidades de reduzir custos.</p>
+            </div>
+          </li>
+          <li class="stock-feature">
+            <div class="stock-feature-dot"></div>
+            <div>
+              <h4>Múltiplos Fornecedores</h4>
+              <p>Cadastre fornecedores por ingrediente e compare preços dentro do sistema.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 9 — FINANCEIRO
+     ============================================================ -->
+<section id="financeiro">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">09 — Controle Financeiro</span>
+    <h2 class="section-title reveal reveal-delay-1">Cada real que entra<br />e que <em>sai, visível.</em></h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      Dashboard financeiro completo. Tome decisões baseadas em dados, não em achismo.
+    </p>
+
+    <div class="finance-grid" style="margin-top:4rem;">
+      <div class="finance-card reveal reveal-delay-1">
+        <span class="finance-icon">💰</span>
+        <h3>Receita Total</h3>
+        <div class="finance-value" style="color:#34D399;">R$32k</div>
+        <div class="finance-trend" style="color:#34D399;">↑ +24% este mês</div>
+      </div>
+      <div class="finance-card reveal reveal-delay-2">
+        <span class="finance-icon">📉</span>
+        <h3>Despesas</h3>
+        <div class="finance-value" style="color:#F87171;">R$18k</div>
+        <div class="finance-trend" style="color:#F87171;">↓ -3% vs mês ant.</div>
+      </div>
+      <div class="finance-card reveal reveal-delay-3">
+        <span class="finance-icon">📈</span>
+        <h3>Lucro Líquido</h3>
+        <div class="finance-value" style="color:#F6B223;">R$14k</div>
+        <div class="finance-trend" style="color:#F6B223;">↑ Margem 43,7%</div>
+      </div>
+      <div class="finance-card reveal reveal-delay-1">
+        <span class="finance-icon">🔄</span>
+        <h3>Fluxo de Caixa</h3>
+        <div class="finance-value" style="color:#fff;">R$8,4k</div>
+        <div class="finance-trend" style="color:#34D399;">↑ Positivo</div>
+      </div>
+      <div class="finance-card reveal reveal-delay-2">
+        <span class="finance-icon">🎯</span>
+        <h3>Meta do Mês</h3>
+        <div class="finance-value" style="color:#fff;">87%</div>
+        <div class="finance-trend" style="color:#F6B223;">R$3,8k para a meta</div>
+      </div>
+      <div class="finance-card reveal reveal-delay-3">
+        <span class="finance-icon">⭐</span>
+        <h3>Ticket Médio</h3>
+        <div class="finance-value" style="color:#fff;">R$38,50</div>
+        <div class="finance-trend" style="color:#34D399;">↑ +R$2,30</div>
+      </div>
+
+      <div class="finance-big-chart reveal" style="grid-column:1/-1;background:var(--black2);border-radius:20px;padding:2rem;border:1px solid rgba(255,255,255,0.05);">
+        <p style="font-size:0.82rem;font-weight:700;color:rgba(255,255,255,0.5);margin-bottom:1.5rem;">Histórico Financeiro — Últimos 6 meses</p>
+        <div style="height:260px;">
+          <canvas id="chartFinanceiro"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 10 — CRM
+     ============================================================ -->
+<section id="crm" style="background:var(--black2);">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <span class="section-label reveal">10 — Gestão de Clientes</span>
+    <h2 class="section-title reveal reveal-delay-1">Conheça cada<br /><em>cliente pelo nome.</em></h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">
+      CRM integrado que transforma compradores ocasionais em clientes fiéis — com dados, histórico e personalização.
+    </p>
+
+    <div class="crm-layout">
+      <div class="reveal-left">
+        <div class="crm-panel">
+          <div class="crm-header">
+            <div class="crm-avatar">MR</div>
+            <div>
+              <div class="crm-user-name">Marcos Rodrigues</div>
+              <span class="crm-user-tag">⭐ Cliente VIP</span>
+            </div>
+            <div style="margin-left:auto;font-size:0.72rem;color:rgba(255,255,255,0.3);">há 2h</div>
+          </div>
+
+          <div class="crm-stats-row">
+            <div class="crm-stat-cell">
+              <div class="crm-stat-label">Total Gasto</div>
+              <div class="crm-stat-val">R$1.240</div>
+            </div>
+            <div class="crm-stat-cell">
+              <div class="crm-stat-label">Pedidos</div>
+              <div class="crm-stat-val">38</div>
+            </div>
+            <div class="crm-stat-cell">
+              <div class="crm-stat-label">Pontos</div>
+              <div class="crm-stat-val" style="color:#F6B223;">1.850</div>
+            </div>
+          </div>
+
+          <div class="crm-history">
+            <div class="crm-history-title">Últimos Pedidos</div>
+            <div class="crm-order">
+              <span class="crm-order-name">🍔 Combo Duplo + Batata</span>
+              <span class="crm-order-val">R$52,90</span>
+              <span class="crm-order-date">hoje</span>
+            </div>
+            <div class="crm-order">
+              <span class="crm-order-name">🥓 Bacon Burger x2</span>
+              <span class="crm-order-val">R$78,00</span>
+              <span class="crm-order-date">3 dias</span>
+            </div>
+            <div class="crm-order">
+              <span class="crm-order-name">🍔 Clássico + Refri</span>
+              <span class="crm-order-val">R$39,90</span>
+              <span class="crm-order-date">1 sem.</span>
+            </div>
+            <div class="crm-order">
+              <span class="crm-order-name">🎉 Combo Família</span>
+              <span class="crm-order-val">R$124,00</span>
+              <span class="crm-order-date">2 sem.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <ul class="crm-info-list">
+          <li class="crm-info-item">
+            <div class="crm-info-icon">📊</div>
+            <div class="crm-info-text">
+              <h4>Perfil Completo</h4>
+              <p>Nome, contato, endereço e preferências salvas. Atendimento personalizado em cada pedido.</p>
+            </div>
+          </li>
+          <li class="crm-info-item">
+            <div class="crm-info-icon">💎</div>
+            <div class="crm-info-text">
+              <h4>Segmentação VIP</h4>
+              <p>Identifique clientes de alto valor e ofereça promoções exclusivas para retê-los.</p>
+            </div>
+          </li>
+          <li class="crm-info-item">
+            <div class="crm-info-icon">📩</div>
+            <div class="crm-info-text">
+              <h4>Comunicação Direta</h4>
+              <p>Envie mensagens pelo WhatsApp diretamente do sistema para clientes inativos ou VIPs.</p>
+            </div>
+          </li>
+          <li class="crm-info-item">
+            <div class="crm-info-icon">🔁</div>
+            <div class="crm-info-text">
+              <h4>Frequência e Retenção</h4>
+              <p>Veja quantos dias o cliente ficou sem pedir e acione automações de reengajamento.</p>
+            </div>
+          </li>
+          <li class="crm-info-item">
+            <div class="crm-info-icon">🎁</div>
+            <div class="crm-info-text">
+              <h4>Programa de Pontos</h4>
+              <p>Cada real gasto vira pontos. Resgates em produtos ou descontos na próxima compra.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 11 — INTEGRAÇÕES
+     ============================================================ -->
+<section id="integracoes">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <div style="text-align:center;max-width:700px;margin:0 auto;">
+      <span class="section-label reveal">11 — Integrações</span>
+      <h2 class="section-title reveal reveal-delay-1">Tudo conectado.<br /><em>Tudo automático.</em></h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;max-width:none;">
+        Um ecossistema tecnológico completo que trabalha junto para você vender mais e se preocupar menos.
+      </p>
+    </div>
+
+    <div class="integrations-grid" style="margin-top:4rem;">
+      <div class="integration-card reveal reveal-delay-1">
+        <span class="integration-icon">💸</span>
+        <h4>PIX Automático</h4>
+        <p>QR Code gerado instantaneamente. Confirmação sem intervenção humana.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-2">
+        <span class="integration-icon">💬</span>
+        <h4>WhatsApp</h4>
+        <p>Notificações de pedido, status e promoções direto no WhatsApp do cliente.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-3">
+        <span class="integration-icon">📊</span>
+        <h4>Dashboard Web</h4>
+        <p>Painel administrativo acessível de qualquer dispositivo com navegador.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-4">
+        <span class="integration-icon">🖨️</span>
+        <h4>Impressão de Comanda</h4>
+        <p>Impressora térmica integrada. Comanda imprime automaticamente ao receber pedido.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-1">
+        <span class="integration-icon">🛵</span>
+        <h4>Delivery</h4>
+        <p>Gestão de entregadores, zonas de entrega e cálculo automático de frete.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-2">
+        <span class="integration-icon">📱</span>
+        <h4>App Mobile</h4>
+        <p>Aplicativo próprio para clientes. Sem depender de iFood ou marketplace.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-3">
+        <span class="integration-icon">☁️</span>
+        <h4>Sistema SaaS</h4>
+        <p>Hospedagem em nuvem segura, backup automático e 99,9% de uptime garantido.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+      <div class="integration-card reveal reveal-delay-4">
+        <span class="integration-icon">🔒</span>
+        <h4>Segurança Total</h4>
+        <p>Dados criptografados, controle de acesso por nível e auditoria completa.</p>
+        <span class="integration-badge">Ativo</span>
+      </div>
+    </div>
+
+    <div class="sistema-block reveal-scale reveal-delay-2" style="margin-top:5rem;">
+      <img src="APP E SISTEMA DE GESTÃO.png" alt="App e Sistema de Gestão Bonafina Burguer" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO 12 — VISÃO DE FUTURO
+     ============================================================ -->
+<section id="futuro" style="background:var(--black2);">
+  <div class="container" style="padding-top:8rem;padding-bottom:8rem;">
+    <div class="futuro-inner">
+      <span class="section-label reveal" style="display:block;text-align:center;">12 — Visão de Futuro</span>
+      <h2 class="futuro-title reveal reveal-delay-1">
+        Mais que uma hamburgueria.<br />
+        Uma marca preparada<br />
+        para <em>crescer.</em>
+      </h2>
+      <p class="futuro-sub reveal reveal-delay-2">
+        Com tecnologia, identidade sólida e sistema escalável, a Bonafina Burguer está posicionada para expandir para franquias, múltiplas unidades e delivery próprio.
+      </p>
+
+      <div class="futuro-pillars">
+        <div class="futuro-pillar reveal reveal-delay-1">
+          <span class="futuro-pillar-icon">🏪</span>
+          <h4>Franquias</h4>
+          <p>Sistema replicável pronto para novos franqueados com gestão centralizada e padronização total.</p>
+        </div>
+        <div class="futuro-pillar reveal reveal-delay-2">
+          <span class="futuro-pillar-icon">📍</span>
+          <h4>Multiunidades</h4>
+          <p>Dashboard unificado para controlar várias unidades em um único painel, com relatórios consolidados.</p>
+        </div>
+        <div class="futuro-pillar reveal reveal-delay-3">
+          <span class="futuro-pillar-icon">🛵</span>
+          <h4>Delivery Próprio</h4>
+          <p>Frota própria de entregadores integrada ao sistema. Sem taxas de marketplace.</p>
+        </div>
+        <div class="futuro-pillar reveal reveal-delay-1">
+          <span class="futuro-pillar-icon">📱</span>
+          <h4>Super App</h4>
+          <p>Aplicativo com fidelidade, assinaturas mensais e clube de benefícios exclusivos.</p>
+        </div>
+        <div class="futuro-pillar reveal reveal-delay-2">
+          <span class="futuro-pillar-icon">🤖</span>
+          <h4>IA & Automação</h4>
+          <p>Predição de demanda, sugestão automática de estoque e atendimento por chatbot.</p>
+        </div>
+        <div class="futuro-pillar reveal reveal-delay-3">
+          <span class="futuro-pillar-icon">🌎</span>
+          <h4>Expansão Regional</h4>
+          <p>Roadmap de expansão para outras cidades com suporte de gestão e marketing digital.</p>
+        </div>
+      </div>
+
+      <div class="futuro-numbers reveal-scale reveal-delay-2">
+        <div class="futuro-num-cell">
+          <div class="futuro-num-val" data-counter data-to="5" data-suffix="x">0x</div>
+          <div class="futuro-num-label">Crescimento Projetado em 3 anos</div>
+        </div>
+        <div class="futuro-num-cell">
+          <div class="futuro-num-val" data-counter data-to="10" data-suffix="+">0+</div>
+          <div class="futuro-num-label">Unidades Previstas até 2027</div>
+        </div>
+        <div class="futuro-num-cell">
+          <div class="futuro-num-val" data-counter data-to="100" data-suffix="%">0%</div>
+          <div class="futuro-num-label">Operação Digitalizada</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO FINAL — CTA
+     ============================================================ -->
+<section id="cta-final">
+  <div class="cta-bg-glow"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <img src="LOGO.png" alt="Bonafina Burguer" class="cta-logo reveal-scale" />
+    <h2 class="cta-title reveal reveal-delay-1">
+      Pronto para levar a<br /><span style="color:var(--gold);">Bonafina</span> ao próximo nível?
+    </h2>
+    <p class="cta-slogan reveal reveal-delay-2">"Sabor que fica na memória."</p>
+    <div class="cta-actions reveal reveal-delay-3">
+      <button class="btn-gold-lg">Solicitar Demonstração</button>
+      <button class="btn-outline" style="padding:1.15rem 2.8rem;font-size:1rem;">Falar pelo WhatsApp</button>
+    </div>
+
+    <div style="margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,0.06);display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;" class="reveal reveal-delay-2">
+      <div>
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:0.5rem;">Sistema</div>
+        <div style="font-weight:700;color:var(--white);font-size:0.9rem;">Completo & Integrado</div>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:0.5rem;">Implementação</div>
+        <div style="font-weight:700;color:var(--white);font-size:0.9rem;">Rápida & Assistida</div>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:0.5rem;">Suporte</div>
+        <div style="font-weight:700;color:var(--white);font-size:0.9rem;">Dedicado 24/7</div>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:0.5rem;">Escalável</div>
+        <div style="font-weight:700;color:var(--white);font-size:0.9rem;">Franquias & Multiunidades</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="margin-bottom:0.5rem;">
+    <span class="foot-gold">BONAFINA BURGUER</span> &nbsp;—&nbsp; O verdadeiro sabor do burger artesanal.
+  </p>
+  <p>Apresentação Institucional &copy; 2025. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
