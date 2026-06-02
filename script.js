@@ -11,6 +11,45 @@ window.addEventListener('load', () => {
       setTimeout(() => loading.remove(), 800);
     }
   }, 2000);
+
+  /* ---- HERO TEXT — some após 4s, volta no hover ---- */
+  setTimeout(() => {
+    const heroContent = document.querySelector('.hero-content');
+    const heroScroll  = document.querySelector('.hero-scroll');
+    if (heroContent) heroContent.classList.add('hide-text');
+    if (heroScroll)  heroScroll.classList.add('hide-text');
+
+    /* Volta ao passar o mouse sobre o hero */
+    const hero = document.getElementById('hero');
+    if (hero) {
+      hero.addEventListener('mouseleave', () => {
+        if (window.scrollY < window.innerHeight) {
+          heroContent && heroContent.classList.add('hide-text');
+          heroScroll  && heroScroll.classList.add('hide-text');
+        }
+      });
+    }
+  }, 4000);
+
+  /* Ao rolar para fora do hero, garante que o texto não volte atrapalhando */
+  window.addEventListener('scroll', () => {
+    const heroContent = document.querySelector('.hero-content');
+    const heroScroll  = document.querySelector('.hero-scroll');
+    if (window.scrollY > window.innerHeight * 0.15) {
+      heroContent && heroContent.classList.add('hide-text');
+      heroScroll  && heroScroll.classList.add('hide-text');
+    } else if (window.scrollY === 0) {
+      /* Se voltar ao topo, mostra o texto de novo por 4s */
+      heroContent && heroContent.classList.remove('hide-text');
+      heroScroll  && heroScroll.classList.remove('hide-text');
+      setTimeout(() => {
+        if (window.scrollY < 10) {
+          heroContent && heroContent.classList.add('hide-text');
+          heroScroll  && heroScroll.classList.add('hide-text');
+        }
+      }, 4000);
+    }
+  }, { passive: true });
 });
 
 /* ---- CUSTOM CURSOR ---- */
