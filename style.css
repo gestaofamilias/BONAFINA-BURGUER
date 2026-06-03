@@ -1766,13 +1766,178 @@ footer .foot-gold { color: var(--gold); font-weight: 600; }
   line-height: 1.5;
 }
 
+/* ---- Benefício ---- */
+.proposta-beneficio {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: rgba(52,211,153,0.06);
+  border: 1px solid rgba(52,211,153,0.18);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.55;
+}
+.proposta-beneficio strong { color: #34D399; }
+
+/* ---- Fluxo impressão ---- */
+.proposta-fluxo {
+  background: rgba(246,178,35,0.05);
+  border: 1px solid rgba(246,178,35,0.15);
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+  margin-top: 1.5rem;
+}
+.proposta-fluxo-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.proposta-fluxo-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  align-items: flex-start;
+}
+.proposta-fluxo-step {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+  padding: 0.25rem 0;
+}
+.proposta-fluxo-arrow {
+  font-size: 0.75rem;
+  color: rgba(246,178,35,0.4);
+  padding: 0 0 0 0.2rem;
+  line-height: 1;
+}
+.proposta-fluxo-equip {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.6;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 0.8rem;
+}
+.proposta-fluxo-equip strong { color: rgba(255,255,255,0.65); }
+
+/* ---- Bloco de Upgrade / Evolução ---- */
+.proposta-upgrade {
+  margin-top: 4rem;
+  background: var(--black);
+  border: 1px solid rgba(246,178,35,0.15);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.proposta-upgrade-inner {
+  padding: 3rem;
+}
+.proposta-upgrade-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+.proposta-upgrade-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+  color: var(--white);
+}
+.proposta-upgrade-title em { font-style: normal; color: var(--gold); }
+.proposta-upgrade-steps {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.proposta-upgrade-arrow-h {
+  font-size: 2rem;
+  color: rgba(246,178,35,0.35);
+  text-align: center;
+}
+.proposta-upgrade-step {
+  background: var(--black2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 1.8rem;
+}
+.proposta-upgrade-step-gold {
+  border-color: rgba(246,178,35,0.25);
+  background: linear-gradient(135deg, rgba(246,178,35,0.05), rgba(246,178,35,0.02));
+  box-shadow: 0 0 40px rgba(246,178,35,0.05);
+}
+.proposta-upgrade-step-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.4);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+}
+.proposta-upgrade-step-plan {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+.proposta-upgrade-step-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.8rem;
+}
+.proposta-upgrade-step-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.6;
+}
+.proposta-upgrade-quote {
+  background: rgba(246,178,35,0.05);
+  border-left: 3px solid var(--gold);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+.proposta-upgrade-quote-mark {
+  color: var(--gold);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0;
+  vertical-align: -0.3em;
+  margin: 0 0.2rem;
+}
+
 @media (max-width: 900px) {
   .proposta-grid { grid-template-columns: 1fr; }
   .proposta-footer { grid-template-columns: 1fr 1fr; }
+  .proposta-upgrade-steps { grid-template-columns: 1fr; }
+  .proposta-upgrade-arrow-h { transform: rotate(90deg); }
 }
 @media (max-width: 600px) {
   .proposta-footer { grid-template-columns: 1fr; }
   .proposta-valor { font-size: 3rem; }
+  .proposta-upgrade-inner { padding: 2rem 1.5rem; }
 }
 
 /* ============================================================
