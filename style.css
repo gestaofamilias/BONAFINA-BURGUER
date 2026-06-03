@@ -1766,6 +1766,66 @@ footer .foot-gold { color: var(--gold); font-weight: 600; }
   line-height: 1.5;
 }
 
+/* ---- Card Único Starter Pro ---- */
+.proposta-single {
+  background: linear-gradient(145deg, #1c1c1c 0%, #141414 100%);
+  border: 1px solid rgba(246,178,35,0.25);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(246,178,35,0.08), 0 40px 120px rgba(246,178,35,0.06);
+  margin-top: 4rem;
+}
+.proposta-single-hero {
+  padding: 3.5rem 3.5rem 3rem;
+  border-bottom: 1px solid rgba(246,178,35,0.1);
+  background: linear-gradient(135deg, rgba(246,178,35,0.04) 0%, transparent 60%);
+  text-align: center;
+}
+.proposta-single-preco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.proposta-single-preco-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.proposta-single-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+.proposta-single-sep {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(246,178,35,0.3);
+  margin-top: 1rem;
+}
+.proposta-single-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.proposta-single-col {
+  padding: 3rem 3rem;
+}
+.proposta-single-col:first-child {
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+@media (max-width: 900px) {
+  .proposta-single-body { grid-template-columns: 1fr; }
+  .proposta-single-col:first-child { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .proposta-single-hero { padding: 2.5rem 2rem 2rem; }
+  .proposta-single-col { padding: 2rem; }
+}
+
 /* ---- Benefício ---- */
 .proposta-beneficio {
   display: flex;
